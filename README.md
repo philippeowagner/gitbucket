@@ -65,7 +65,7 @@ Or, if you don't want/need launchctl, you can just run:
 ```
 
 #### Manual Installation
-On OS X, copy the [gitbucket.plist](https://raw.github.com/gitbucket/gitbucket/master/contrib/macosx/gitbucket.plist) file to `~/Library/LaunchAgents/`
+On OS X, generate `gitbucket.plist` by [this script](https://raw.githubusercontent.com/gitbucket/gitbucket/master/contrib/macosx/makePlist) and copy it to `~/Library/LaunchAgents/`
 
 Run the following commands in `Terminal` to
 
@@ -88,11 +88,20 @@ Support
 --------
 
 - If you have any question about GitBucket, send it to [gitter room](https://gitter.im/gitbucket/gitbucket) before raise an issue.
+- Make sure check whether there is a same question or request in the past.
 - When raise a new issue, write subject in **English** at least.
 - We can also support in Japaneses other than English at [gitter room for Japanese](https://gitter.im/gitbucket/gitbucket_ja).
+- First priority of GitBucket is easy installation and reproduce GitHub behavior, so we might reject if your request is against it.
 
 Release Notes
 --------
+### 3.8 - 31 Oct 2015
+- Moved to GitHub organization
+- Omit diff view for large differences
+- Repository creation API
+- Render url as link in repository description
+- Expand attachable file types
+
 ### 3.7 - 3 Oct 2015
 - Markdown processor has been switched to [markedj](https://github.com/gitbucket/markedj) from pegdown
 - Clone in desktop button
